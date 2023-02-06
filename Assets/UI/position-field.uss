@@ -1,0 +1,16 @@
+.snap-button {
+}
+
+.snap-button:hover {
+    -unity-background-image-tint-color: rgba(255, 255, 255, 255);
+    background-color: rgba(103, 103, 103, 255);
+}
+
+.snap-button:active {
+    -unity-background-image-tint-color: rgb(0, 0, 0);
+    background-color: rgba(67, 67, 67, 255);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}

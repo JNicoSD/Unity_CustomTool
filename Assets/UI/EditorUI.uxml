@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/UI/snap-button.uss?fileID=7433441132597879392&amp;guid=a519d423b08087a438013fa3cba08912&amp;type=3#snap-button" />
+    <Style src="project://database/Assets/UI/position-field.uss?fileID=7433441132597879392&amp;guid=1979db7b8bc0f7b48b74058b9eea4dfb&amp;type=3#position-field" />
+    <ui:VisualElement name="snap" style="align-items: center; margin-left: 4px; margin-right: 4px; margin-top: 4px; margin-bottom: 4px; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;">
+        <uie:Vector3Field label="Snap Position" name="snap-values" style="justify-content: flex-start; flex-wrap: nowrap; flex-direction: row; transform-origin: center; width: 99.5%;" />
+        <ui:Button text="-----------------SNAP----------------" display-tooltip-when-elided="true" name="snap-button" class="snap-button" style="width: 75%; align-items: center; margin-top: 5px;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="name" style="align-items: center; flex-direction: column;">
+        <ui:GroupBox name="change-name" style="width: 99.5%; justify-content: center; align-items: center; flex-direction: row;">
+            <ui:TextField picking-mode="Ignore" label="Name Change" value="filler text" name="change-name-value" style="width: 85%; flex-shrink: 100;" />
+            <ui:TextField picking-mode="Ignore" name="numeric-name-value" tooltip="(Optional) Add a number suffix. You can add underscore, parenthesis, or brackets. Example: &quot;_2&quot;, &quot;(1)&quot;, &quot;[20]&quot;." usage-hints="None" focusable="true" style="flex-wrap: nowrap; width: 62px;" />
+        </ui:GroupBox>
+        <ui:Button text="Change Name" display-tooltip-when-elided="true" name="change-name-button" class="snap-button" style="width: 74%; justify-content: flex-start; height: 32px;" />
+        <ui:Button text="Sort Game Objects By Name" display-tooltip-when-elided="true" name="sort-by-name-button" tooltip="Sort Game Objects in" class="snap-button" style="bottom: -8px; width: 74%; height: 31px;" />
+    </ui:VisualElement>
+</ui:UXML>
